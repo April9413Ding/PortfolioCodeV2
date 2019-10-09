@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: whitesmoke;
+}
+
 img{
     width: 100%;
 }
@@ -57,9 +61,7 @@ h1 {
     line-height: 4rem;
     background-color: rgba(0, 0, 0, 0.7);
     padding:0.5rem 2rem;
-    margin:8rem auto 0.5rem -2rem;
-    position: absolute;
-    z-index: 1;
+    margin-right: auto;
 }
 
 h2{
@@ -133,15 +135,15 @@ li{
     align-self: flex-end;
 }
 
-.fixed {
+header {
     width: 100%;
     height: 4rem;
     position: fixed;
     background-color: #17404f;
-    z-index: 2;
+    z-index: 999;
 }
 
-.fixed .container{
+header .container{
     padding: 0 2rem;
 }
 
@@ -210,12 +212,22 @@ footer .copyRight {
     margin-top: 6rem;
 }
 
+.homeProjectList .container, .main{
+    background-color: white;
+}
+
 /* UP GLOBAL */
 /* DOWN HOME PAGE */
 
 .hero{
     width: 100%;
     background-color: #17404f;
+    background-attachment: fixed;
+    background-image: url(assets/heroImg.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 15% 0 18% 0;
 }
 
 .hero p{
@@ -225,22 +237,18 @@ footer .copyRight {
     line-height: 2rem;
     letter-spacing: 0.02rem;
     background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    z-index: 1;
     padding: 0.5rem 2rem;
-    margin: 15rem auto 0 -2rem;
-}
-
-.heroImg {
-    width: 110%;
-    max-width:64rem;
-    margin: -2rem;
+    margin-top: 2%;
 }
 
 .logo {
     width: 2rem;
     height: 2rem;
     margin: 0 -4rem 0 0;
+}
+
+.homeProjectList .container{
+    margin-top: -5%;
 }
 
 .projectListItem {
@@ -324,6 +332,10 @@ footer .copyRight {
     justify-content: center;
 }
 
+.gif .container{
+    width: 100%;
+}
+
 .gif img{
     width: 60%;
     margin: 1rem auto;
@@ -377,9 +389,13 @@ footer .copyRight {
 /* DOWN MEDIA */
 
 @media only screen and (max-width: 800px) {
-    .fixed .container{
+    header .container{
         width: 100%;
         padding:0;
+    }
+
+    .hero{
+        padding-bottom: 5%;
     }
     
     .projectListItem{
@@ -398,13 +414,11 @@ footer .copyRight {
         letter-spacing: 0.1rem;
         font-weight: 300;
         line-height: 2.5rem;
-        margin:6rem auto 0.5rem -2rem;
     }
 
     .hero p{
         font-size: 1.5rem;
         line-height: 1.5rem;
-        margin: 10rem auto 0 -2rem;
     }
 
     nav{
@@ -430,28 +444,26 @@ footer .copyRight {
 }
 
 @media only screen and (max-width: 500px) {
+    h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    
+    .hero{
+        background-position: center 2rem;
+    }
+
+    .hero p{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    
     h4{
         font-size: 1.2rem;
     }
 
-    .heroImg{
-        margin: auto auto -2rem -1rem;
-    }
-
     nav a{
        margin:0;
-    }
-
-    h1{
-        margin-top: 10rem;
-    }
-
-    .hero p{
-        margin-top: 14rem;
-    }
-
-    .homeProjectList{
-        margin-top: 3rem;
     }
 
     h3{

@@ -11,9 +11,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: whitesmoke;
-}
 
 img{
     width: 100%;
@@ -186,17 +183,7 @@ footer .copyRight {
     margin-top: 0.5rem;
 }
 
-.gallery .justify{
-    margin: 4rem 0;
-}
-
-.gallery .rightImg{
-    margin-top: 6rem;
-}
-
-.gallery img{
-    width: 48%;
-    margin: 0 0 auto 0;
+.galleryRow img{
     border:  rgba(0, 0, 0, 0.2) solid 1px;
 }
 
@@ -218,6 +205,10 @@ footer .copyRight {
 
 /* UP GLOBAL */
 /* DOWN HOME PAGE */
+
+.home{
+    background-color: whitesmoke;
+}
 
 .hero{
     width: 100%;
@@ -279,6 +270,10 @@ footer .copyRight {
     margin-top: 0.5rem;
 }
 
+.homeProjectList span{
+    color: rgba(51, 118, 167, 0.7);
+}
+
 .homeProjectList a {
     color: #fc5185;
     font-weight: 400;
@@ -289,9 +284,8 @@ footer .copyRight {
 }
 
 .homeProjectList a:hover{
-    color: white;
-    background-color: #fc5185;
-    box-shadow: 0px 5px 5px lightgray;
+    text-decoration: underline;
+    text-shadow: 0px 5px 5px lightgray;
     transition: 0.3s;
 }
 
@@ -311,6 +305,10 @@ footer .copyRight {
 
 /* UP HOME PAGE */
 /* DOWN CASESTUDY PAGE */
+
+.pages {
+    background-color: white;
+}
 
 .header{
     width: 100%;

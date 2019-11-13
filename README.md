@@ -6,8 +6,8 @@ Version 2.0
 
 Version 2.1
 
-New Hero Section
-New Background
+New Hero Section.
+New Background.
 
 Time: Oct 2019
 
@@ -15,9 +15,9 @@ Projects: 3
 
 Version 2.2
 
-Adjust Structure
-Add Developer Section
-Add New Project
+Adjust Structure.
+Add Developer Section.
+Add New Project.
 
 Time: Nov 2019
 

@@ -367,8 +367,8 @@ footer .copyRight {
 }
 
 .nextProject .next:hover{
-    color: white;
-    background-color: #fc5185;
+    
+    text-decoration: underline;
     box-shadow: 0px 5px 5px lightgray;
     transition: 0.3s;
 }
